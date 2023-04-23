@@ -1,0 +1,46 @@
+:root {
+    --game-width: 800px;
+    --game-height: 600px;
+    --game-background-color: rgb(147, 147, 241);
+    --light-hover-color:rgb(0, 0, 0, 15%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#attach-point {
+    width: var(--game-width);
+    height: var(--game-height);
+    
+}
+#game-grid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#light-board {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.light-row {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.light-button {
+    width: 20%;
+    height: 100%;
+    background: white;
+    border-radius: 50% 50% 50% 50%;
+    border: 2px solid black;
+}

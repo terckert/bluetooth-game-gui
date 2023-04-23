@@ -7,7 +7,10 @@ const setLights = (lStr) => {
     }
 }
 
-const lightChoice = async (btn, value) => {
-    // console.log(`Button ${value}`)
-    setLights(await eel.lightPress(value)())
+const lightChoice = async (value) => {
+    setLights(await eel.lightChoice_py(value)())
+}
+
+const startNewGame = async () => {
+    setLights(await eel.startNewGame_py()())
 }
